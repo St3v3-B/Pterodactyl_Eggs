@@ -1,0 +1,41 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2021-03-25T04:05:17-04:00",
+    "name": "Hastebin",
+    "author": "steve@bussing.xyz",
+    "description": "Run private hastebin for multiple users",
+    "features": null,
+    "images": [
+        "quay.io\/pterodactyl\/core:nodejs"
+    ],
+    "file_denylist": [],
+    "startup": "HOST=0.0.0.0 PORT={{SERVER_PORT}} node {{SCRIPT}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"\"\r\n}",
+        "logs": "{\r\n    \"custom\": false,\r\n    \"location\": \"logs\/latest.log\"\r\n}",
+        "stop": "^CC"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#\/bin\/ash\r\n\r\ncd \/mnt\/server\r\nrm -rf node_modules\r\nrm -rf .cache\r\nrm -rf .npm\r\nwget http:\/\/neytiri.digital\/egg\/haste.zip\r\nunzip haste.zip\r\nrm -rf haste.zip\r\n\r\n\r\necho -e \"Private hastebin install complete\"\r\nexit 0",
+            "container": "node:12-alpine",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Script Name",
+            "description": "Script name or path",
+            "env_variable": "SCRIPT",
+            "default_value": "server.js",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": "required|string"
+        }
+    ]
+}
