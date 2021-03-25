@@ -58,7 +58,21 @@ we will be commiting 2 small changes to the Pterodactyl.conf. open using your fa
 	```
 	When you have removed the `default_server` from the config you can save the config and we will be making a new one
 	
-4. You will be making the new config now open using your favorite text editor `hastebin.conf` in that config you can paste the configuration from below dont forget to change the haste.changeyour.domain to your domain name
+4. You will be making the new config now open using your favorite text editor `hastebin.conf` in that config you can paste the configuration from below dont forget to change the `haste.changeyour.domain` to your domain name
+   dont forget to change the `serveripandport:12345` to the server port on the pterodactyl panel
+   
+   ```
+	server {
+	  listen 80;
+	  listen [::]:80;
+
+	  server_name haste.changeyour.domain;
+
+	  location / {
+	    proxy_pass http://serveripandport:12345;
+	   }
+	}
+	```
 
 ### Using nginx proxy manager
 
