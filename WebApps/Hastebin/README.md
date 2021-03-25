@@ -16,5 +16,14 @@ If you are reading this it looks like you are looking to add this egg to your se
 
 ##Instalation
 
+### Using a nginx config
+
+
+
+### Using nginx proxy manager
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
 
     
