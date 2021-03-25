@@ -28,6 +28,10 @@ But it is less practical when you have more than one or two.
 
 With the Nginx Proxy Manager it gives you a nice interface for you to configure new webaplication that run trough ports other than 80/443
 
+#### If you enounter any problems please contact me and i will help you
+My Discord ```.Steve B.#0064``` Discord id: ```481830034756337676```
+My discord server https://neytiri.digital/discord
+
 ### Using a nginx config
 to configure it with a small nginx config you will need to have full 'root' acces to the server
 
@@ -73,8 +77,19 @@ we will be commiting 2 small changes to the Pterodactyl.conf. open using your fa
 	   }
 	}
 	```
-	#### with this config you will not have ssl i will be adding this later down the line
+	#### With this config you will not have ssl i will be adding this later down the line.
 	
+	#### You can add ssl using cloudflare.
+
+5. Now we need to enable the changes we have made and the `hastebin.conf`
+to enable the `hastebin.conf` we will need to make a system link from that file
+
+```ln /etc/nginx/sites-available/hastebin.conf /etc/nginx/sites-enabled/```
+
+Now when you have made the system link we can restart your nginx and you are ready to use your hastebin.
+
+```systemctl restart nginx```
+
 ### Using nginx proxy manager
 
 
