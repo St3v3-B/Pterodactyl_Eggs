@@ -1,29 +1,25 @@
-# Template
+# Steve_B's Pterodactyl eggs
 
-Foobar is a Python library for dealing with word pluralization.
+I am working on adding a new eggs to the collection of public eggs for the Pterodactyl community.
 
-## Installation
+## How to import an egg
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+If you are reading this it looks like you are looking to add an egg to your server.
 
-```bash
-pip install foobar
-```
+1. Download any of the json files located in the folders below.
+   1. It's easiest to right click the `raw` button and save as.
+2. In your panel go to the `Nests` section in the admin part of the panel
+3. Click the green `Import Egg` button
+4. Browse to the json file you saved earlier
+5. Select what nest you want to put the egg in.
+   1. If you want a new nest you need to create it before importing the egg.
 
-## Usage
+# You must restart your daemon after importing an egg if you are using 0.7. This is not required on 1.X.
 
-```python
-import foobar
+## [WebApps](/WebApps)
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+[WebApps](/WebApps)
+* [Private Hastebin](/WebApps/Hastebin) Node JS
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
