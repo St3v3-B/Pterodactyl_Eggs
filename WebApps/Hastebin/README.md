@@ -27,14 +27,20 @@ But it is less practical when you have more than one or two.
 ***Nginx Proxy Manager***
 
 With the Nginx Proxy Manager it gives you a nice interface for you to configure new webaplication that run trough ports other than 80/443
-### Using a nginx config
 
+### Using a nginx config
+to configure it with a small nginx config you will need to have full 'root' acces to the server
+
+1. Login to the server using ssh and cd to the configuration folders
+   ```cd /etc/nginx/sites-available/```
+   
+2. When you type `ls` you will see 2 configuration files one called Default and one called Pterodactyl.conf
+we will be commiting 2 small changes to the Pterodactyl.conf. open using your favorite text editor the pterodactyl.conf
+```nano pterodactyl.conf```
 
 
 ### Using nginx proxy manager
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
 
 
     
