@@ -38,7 +38,7 @@ to configure it with a small nginx config you will need to have full 'root' acce
 2. When you type `ls` you will see 2 configuration files one called Default and one called Pterodactyl.conf
 we will be commiting 2 small changes to the Pterodactyl.conf. open using your favorite text editor the pterodactyl.conf
 
-```nano pterodactyl.conf```
+    ```nano pterodactyl.conf```
 
 
 ### Using nginx proxy manager
