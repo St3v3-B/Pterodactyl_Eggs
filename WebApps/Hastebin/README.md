@@ -14,7 +14,7 @@ If you are reading this it looks like you are looking to add this egg to your se
 
 ## You must restart your daemon after importing an egg if you are using 0.7. This is not required on 1.X.
 
-##Instalation
+## Instalation
 
 ### Using a nginx config
 
