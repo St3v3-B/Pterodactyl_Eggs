@@ -48,12 +48,12 @@ we will be commiting 2 small changes to the Pterodactyl.conf. open using your fa
 	real_ip_header X-Forwarded-For;
 	server {
 		listen 80 default_server;
-		server_name cpanel.neytiri.digital;
+		server_name panel.yourhost.com;
 		return 301 https://$server_name$request_uri;
 	}
 	server {
 		listen 443 ssl http2 default_server;
-		server_name cpanel.neytiri.digital;
+		server_name panel.yourhost.com;
 		root /var/www/pterodactyl/public;
 	```
 	When you have removed the `default_server` from the config you can save the config and we will be making a new one
