@@ -23,6 +23,7 @@ Now you need to choose if you would like to use nginx proxy manager or a simple 
 With the nginx config you are ready to go within 2 minutes.
 But it is less practical when you have more than one or two.
 
+
 ***Nginx Proxy Manager***
 
 With the Nginx Proxy Manager it gives you a nice interface for you to configure new webaplication that run trough ports other than 80/443
