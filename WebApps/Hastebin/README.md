@@ -56,7 +56,9 @@ we will be commiting 2 small changes to the Pterodactyl.conf. open using your fa
 		server_name cpanel.neytiri.digital;
 		root /var/www/pterodactyl/public;
 	```
+	When you have removed the `default_server` from the config you can save the config and we will be making a new one
 	
+4. You will be making the new config now open using your favorite text editor `hastebin.conf` in that config you can paste the configuration from below dont forget to change the haste.changeyour.domain to your domain name
 
 ### Using nginx proxy manager
 
