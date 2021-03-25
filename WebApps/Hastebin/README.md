@@ -40,6 +40,23 @@ we will be commiting 2 small changes to the Pterodactyl.conf. open using your fa
 
    ```nano pterodactyl.conf```
 
+3. When you have the pterodactyl.conf open change
+
+	You will be needed to remove the ```default_server``` from the config
+	
+	```
+	real_ip_header X-Forwarded-For;
+	server {
+		listen 80 default_server;
+		server_name cpanel.neytiri.digital;
+		return 301 https://$server_name$request_uri;
+	}
+	server {
+		listen 443 ssl http2 default_server;
+		server_name cpanel.neytiri.digital;
+		root /var/www/pterodactyl/public;
+	```
+	
 
 ### Using nginx proxy manager
 
