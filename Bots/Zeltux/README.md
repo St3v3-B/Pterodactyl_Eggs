@@ -4,7 +4,7 @@ Zeltux is a cheap and affordable multi-purpose, self-hosted Discord bot designed
 
 Top Features: Moderation, Support, Tickets, Giveaways, Music, Economy, Auto Responses, Fun, Games, Levels, Invites. https://features.zeltux.net/
 
-Runs the Neytiri `@Neytiri`
+Runs the`@Neytiri` Discord bot
 
 ### Server Ports
 There are no ports required for zeltux
