@@ -4,9 +4,9 @@
         "version": "PTDL_v1",
         "update_url": null
     },
-    "exported_at": "2021-03-25T04:05:17-04:00",
-    "name": "Private Hastebin",
-    "author": "steve@neytiri.digital",
+    "exported_at": "2021-03-29T04:50:02-04:00",
+    "name": "Hastebin",
+    "author": "steve@bussing.xyz",
     "description": "Run private hastebin for multiple users",
     "features": null,
     "images": [
@@ -22,7 +22,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#\/bin\/ash\r\n\r\ncd \/mnt\/server\r\nrm -rf node_modules\r\nrm -rf .cache\r\nrm -rf .npm\r\nwget http:\/\/neytiri.digital\/egg\/haste.zip\r\nunzip haste.zip\r\nrm -rf haste.zip\r\n\r\n\r\necho -e \"Private hastebin install complete\"\r\nexit 0",
+            "script": "#\/bin\/ash\r\n\r\ncd \/mnt\/server\r\nrm -rf node_modules\r\nrm -rf .cache\r\nrm -rf .npm\r\nwget https:\/\/ftp.neytiri.digital\/Hastebin_egg.zip\r\nunzip Hastebin_egg.zip\r\nrm -rf Hastebin_egg.zip\r\n\r\n\r\necho -e \"Private hastebin install complete\"\r\nexit 0",
             "container": "node:12-alpine",
             "entrypoint": "ash"
         }
