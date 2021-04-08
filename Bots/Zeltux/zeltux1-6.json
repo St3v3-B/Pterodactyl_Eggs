@@ -6,7 +6,7 @@
     },
     "exported_at": "2021-03-29T04:47:53-04:00",
     "name": "NodeJS 14 Bot (Zeltux 1.6)",
-    "author": "steve@bussing.xyz",
+    "author": "steve@neytiri.digital",
     "description": "NodeJS version 14 - made for Discord Bots,\r\nWhenever you create a server please DO NOT delete node_modules. This will uninstall sodium.\r\nYou will also need (apt-get install autoconf automake g++ libtool build-essential) installed checkout more on https:\/\/docs.corebot.dev\/en\/Setup\/Dependencies",
     "features": null,
     "images": [
