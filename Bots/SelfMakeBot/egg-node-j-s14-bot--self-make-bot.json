@@ -1,0 +1,41 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2021-04-08T13:48:35-04:00",
+    "name": "NodeJS 14 Bot (Self Make Bot)",
+    "author": "steve@neytiri.digital",
+    "description": "NodeJS version 14 - made for Discord Bots,\r\nWhenever you create a server please DO NOT delete node_modules. This will uninstall sodium.\r\nYou will also need (apt-get install autoconf automake g++ libtool build-essential) installed checkout more on https:\/\/docs.corebot.dev\/en\/Setup\/Dependencies",
+    "features": null,
+    "images": [
+        "quay.io\/parkervcp\/pterodactyl-images:debian_nodejs-14"
+    ],
+    "file_denylist": [],
+    "startup": "cd \/home\/container && echo -e \"This egg has poroudly been made by\" && echo -e \"https:\/\/neytiri.digital\" && echo -e \"  \" &&  node {{BOT_JS_FILE}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"\"\r\n}",
+        "logs": "{}",
+        "stop": "^CC"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#\/bin\/ash\r\n\r\napk add --no-cache git make gcc g++ python\r\n\r\ncd \/mnt\/server\r\nrm -rf node_modules\r\nrm -rf .cache\r\nrm -rf .npm\r\nwget https:\/\/ftp.neytiri.digital\/selfmade_bot.zip\r\nunzip selfmade_bot.zip\r\nrm -rf selfmade_bot.zip\r\nnpm init -y\r\ncd \/mnt\/server\r\nrm -rf node_modules\r\nrm -rf .cache\r\nrm -rf .npm\r\nwget http:\/\/ftp.neytiri.digital\/zeltux_node_modules.zip\r\nunzip zeltux_node_modules.zip\r\nrm -rf zeltux_node_modules.zip\r\nmkdir commands\r\n\r\necho -e \"Self Make Bot instalation and download complete\"\r\nexit 0",
+            "container": "node:12-alpine",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Startup file",
+            "description": "The file that starts the bot.",
+            "env_variable": "BOT_JS_FILE",
+            "default_value": "index.js",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string"
+        }
+    ]
+}
