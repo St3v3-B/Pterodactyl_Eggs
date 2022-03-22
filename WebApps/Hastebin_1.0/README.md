@@ -30,7 +30,7 @@ With the Nginx Proxy Manager it gives you a nice interface for you to configure 
 
 #### If you enounter any problems please contact me and i will help you
 My Discord ```.Steve B.#0064``` Discord id: ```481830034756337676```
-My discord server https://neytiri.digital/discord
+My discord server https://discord.gg/ShAMpMF7kD
 
 ### Using a nginx config
 to configure it with a small nginx config you will need to have full 'root' acces to the server
